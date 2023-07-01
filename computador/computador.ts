@@ -1,45 +1,16 @@
-class Laptop{
-    tela: number;
-
-    constructor(tela: number){
-        this.tela = tela;
-    }
-
-    ligarMonitor(){
-        console.log('O monitor do laptop foi ligado');
-    }
-}
+import {Laptop} from "./computador-base"
+import {Lenovo} from "./lenovo"
+import {LenovoX} from "./lenovox"
 
 let computador = new Laptop(14);
 computador.ligarMonitor();
-
-class Lenovo extends Laptop{
-    constructor(){
-        super(21);
-    }
-
-    aumentarBrilho(valor: number){
-        console.log(`O brilho subiu ${valor} pontos`);
-    }
-}
 
 let computador2 = new Lenovo();
 
 computador2.ligarMonitor();
 computador2.aumentarBrilho(5);
 
-interface Gamer{
-    memoriaDeVideo: number;
-}
+let lenovoGamer = new LenovoX();
 
-class LapTopGamer extends Laptop implements Gamer{
-    memoriaDeVideo: number = 512;
-    
-    constructor(){
-        super(21);
-    }
-
-    aumentarBrilho(valor: number){
-        console.log(`O brilho subiu ${valor} pontos`);
-    }
-}
+lenovoGamer.aumentarBrilho(20);
+lenovoGamer.ligarMonitor();
