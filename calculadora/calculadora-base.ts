@@ -12,6 +12,14 @@ export class Calculadora{
     }
 
     dividir(numero1: number, numero2: number): number{
-        return (numero1 / numero2);
+        let resultado;
+
+        if(numero2 == 0){
+            resultado = -1;
+        } else {
+            resultado = (numero1 / numero2);
+        }
+
+        return resultado;
     }
 }
