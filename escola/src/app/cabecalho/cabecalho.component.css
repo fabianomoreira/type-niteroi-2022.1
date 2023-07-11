@@ -1,0 +1,13 @@
+header {
+    height: 2rem;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+}
