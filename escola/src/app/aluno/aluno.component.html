@@ -1,4 +1,12 @@
 <label>Aluno: {{aluno.nome}}</label>
 <div [hidden]="!aluno.isAprovado">
-<p>Aprovado</p>
+    <p [class.aprovado]="aluno.isAprovado">{{aluno.situacao}}</p>
 </div>
+<div [hidden]="aluno.isAprovado">
+    <p [class.reprovado]="!aluno.isAprovado">{{aluno.situacao}}</p>
+</div>
+
+<input type="text" id="mensagem" name="mensagem" [value]="mensagem"><br>
+{{mensagem}}<br><br>
+
+<input type="button" name="btnExibir" value="Executar Função" (click)="exibir()">
