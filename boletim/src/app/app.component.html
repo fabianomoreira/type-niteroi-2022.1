@@ -1,8 +1,5 @@
 <bol-header></bol-header>
-<bol-aluno [aluno]="aluno1"></bol-aluno>
-<bol-aluno [aluno]="aluno2"></bol-aluno>
-<bol-aluno [aluno]="aluno3"></bol-aluno>
-<bol-aluno [aluno]="aluno4"></bol-aluno>
+<bol-aluno *ngFor="let a of alunos" [aluno]="a"></bol-aluno>
 
 
 

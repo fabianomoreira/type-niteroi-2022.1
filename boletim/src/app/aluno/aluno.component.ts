@@ -8,4 +8,8 @@ import { Aluno } from '../modelo/aluno.model';
 })
 export class AlunoComponent {
   @Input() aluno!: Aluno;
+
+  exibir(){
+    console.log(`Foi clicado o aluno ${this.aluno.nome}`);
+  }
 }
