@@ -8,8 +8,9 @@ import { Categoria } from './categoria/categoria.model';
 })
 export class CategoriasComponent {
   categorias: Categoria[] = [
-    {id: "1", titulo: "Terro", imagePath: "../../assets/dracula.png"},
+    {id: "1", titulo: "Terror", imagePath: "../../assets/dracula.png"},
     {id: "2", titulo: "Aventura", imagePath: "../../assets/climbing.png"},
-    {id: "3", titulo: "Romance", imagePath: "../../assets/romance.png"}
+    {id: "3", titulo: "Romance", imagePath: "../../assets/romance.png"},
+    {id: "4", titulo: "Super Heróis", imagePath: "../../assets/superhero.png"}
   ]
 }
