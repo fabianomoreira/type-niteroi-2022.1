@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { CategoriasComponent } from './categorias/categorias.component';
+import { CategoriaComponent } from './categorias/categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    CategoriasComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
