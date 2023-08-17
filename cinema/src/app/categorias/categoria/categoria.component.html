@@ -4,6 +4,6 @@
     </div>
     <div class="card-body">
         <img class="margin-b" [src]="categoria.imagePath" width="100px">
-        <a href="filmes.html" style="text-decoration: none;"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Exibir</button></a>
+        <a [routerLink]="['/filmes', categoria.id]" style="text-decoration: none;"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Exibir</button></a>
     </div>
 </div>

@@ -3,23 +3,41 @@
         {
             "id": 1,
             "titulo": "Terror",
-            "imagePath": "../../assets/dracula.png"
+            "imagePath": "/assets/dracula.png"
         },
         {
             "id": 2,
             "titulo": "Aventura",
-            "imagePath": "../../assets/climbing.png"
+            "imagePath": "/assets/climbing.png"
+        }
+    ],
+    "filmes": [
+        {
+            "id": 1,
+            "descricao": "Rogai por nós",
+            "duracao": "1h 30m",
+            "ano": "2021",
+            "indicacao": "16 anos",
+            "imagePath": "/assets/filmes/rogai.jpg",
+            "categoriaId": 1
+        },
+        {
+            "id": 2,
+            "descricao": "O homem invisível",
+            "duracao": "2h 05m",
+            "ano": "2020",
+            "indicacao": "14 anos",
+            "imagePath": "/assets/filmes/invisivel.jpg",
+            "categoriaId": 1
         },
         {
             "id": 3,
-            "titulo": "Terror",
-            "imagePath": "../../assets/dracula.png"
-        },
-        {
-            "id": 4,
-            "titulo": "Aventura",
-            "imagePath": "../../assets/climbing.png"
+            "descricao": "Renan, o terrível",
+            "duracao": "2h 05m",
+            "ano": "2020",
+            "indicacao": "14 anos",
+            "imagePath": "/assets/filmes/invisivel.jpg",
+            "categoriaId": 2
         }
-
     ]
 }

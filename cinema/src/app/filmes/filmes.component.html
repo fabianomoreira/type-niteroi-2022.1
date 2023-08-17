@@ -1,0 +1,19 @@
+<!-- Conteúdo -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Filmes</h1>
+</div>
+
+<main role="main" class="flex-shrink-0">
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div *ngFor="let filme of filmes">
+                <div class="row mb-2">
+                    <cin-filme [filme]="filme"></cin-filme>
+                </div>
+            </div>
+            <div *ngIf="filmes.length == 0">
+                <h3 style="color: red">Não existem filmes nessa categoria!</h3>
+            </div>
+        </div>
+    </div>
+</main>

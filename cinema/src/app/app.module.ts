@@ -12,6 +12,9 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { CategoriaComponent } from './categorias/categoria/categoria.component';
 import { CategoriasService } from './categorias/categorias.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FilmesComponent } from './filmes/filmes.component';
+import { FilmeComponent } from './filmes/filme/filme.component';
+import { FilmesService } from './filmes/filmes.service';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,16 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     AboutComponent,
     CategoriasComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    FilmesComponent,
+    FilmeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     HttpClientModule
   ],
-  providers: [CategoriasService],
+  providers: [CategoriasService, FilmesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
